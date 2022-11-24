@@ -20,6 +20,7 @@ export class TasksComponent implements OnInit {
       this.tasks = tasks
     });
   }
+
   deleteTask(task:Task){
     this.taskService.deleteTask(task)
       .subscribe(
@@ -30,4 +31,12 @@ export class TasksComponent implements OnInit {
     })
   }
 
+  toggleReminder(task:Task){
+    task.reminder = !task.reminder   
+    this.taskService.updateTaskReminder(task).subscribe(); 
+  }
+
+  addTask(task:Task){
+    
+  }
 }
