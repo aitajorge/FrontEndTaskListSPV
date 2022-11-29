@@ -13,8 +13,8 @@
       "reminder": true
     },
     {
-      "text": "Nueva tarea",
-      "day": "Mañana",
+      "text": "otra Nueva tarea",
+      "day": "para cuando sea",
       "reminder": false,
       "id": 4
     }
